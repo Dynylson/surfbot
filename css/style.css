@@ -52,10 +52,6 @@ a {
 }
 
 .header-menu .underline-vermelho::after {
-  display: none;
-}
-
-.header-menu .underline-vermelho::after {
   content: "";
   display: block;
   width: 100%;
@@ -241,8 +237,21 @@ a {
 
 /* Aulas */
 .aulas {
+  position: relative;
   margin-top: 7rem;
   background: var(--cinza-1);
+}
+
+.aulas .ondas-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.aulas .ondas {
+  position: absolute;
+  top: -32.5px;
+  width: 175px;
+  height: 65px;
 }
 
 .aulas h1 {
@@ -356,4 +365,37 @@ a {
 
 .card-mensalidade-width button:hover {
   background: var(--preto-1);
+}
+
+.aulas-p {
+  margin: 50px 0;
+}
+
+.aulas-p p {
+  font-size: 18px;
+  color: var(--preto-2);
+  text-align: center;
+}
+
+.aulas-p .span-red {
+  color: var(--vermelho-1);
+  font-weight: bold;
+}
+
+.aulas-p .underline-vermelho {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.aulas-p .underline-vermelho::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: var(--vermelho-1);
+}
+
+/* Blockquote */
+.blockquote-image {
+  max-width: 100%;
 }
