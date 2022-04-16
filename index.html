@@ -19,12 +19,14 @@
       <p class="container branco">Aulas na Praia Mansa de Sexta à Domingo das 06:00 às 14:00</p>
     </div>
     <div class="header-principal preto-3-background container">
-      <img src="./assets/surfbot-logo.svg" alt="Logo da Surfbot">
+      <a href="/">
+        <img src="./assets/surfbot-logo.svg" alt="Logo da Surfbot">
+      </a>
       <ul class="header-menu">
         <li><a href="#">Praia</a></li>
         <li><a href="#">Aulas</a></li>
         <li><a href="#">Contato</a></li>
-        <li><a href="#">Matricule-se</a></li>
+        <li class="underline-vermelho"><a href="#">Matricule-se</a></li>
       </ul>
     </div>
   </header>
@@ -41,7 +43,7 @@
     <div class="galeria-e-mapa">
       <div class="pranchas-container">
         <img class="foto-galeria" src="./assets/foto-galeria.jpg" alt="Pranchas">
-        <img class="foto-maps" src="./assets/googlemaps.jpg" alt="Google Maps">
+        <img class="foto-maps" src="./assets/googlemaps2.jpg" alt="Google Maps">
       </div>
       <div class="galeria-info">
         <h4>COMO CHEGAR</h4>
@@ -87,50 +89,60 @@
     </div>
   </main>
 
-  <section class="aulas">
+  <section class="aulas container">
     <h1>Aulas</h1>
-    <div class="card-mensalidade">
-      <h3>INFANTIL</h3>
-      <ul>
-        <li>Público entre 5 e 15 anos</li>
-        <li>Equipamentos fornecidos</li>
-        <li>Horários de Sex. à Sab.</li>
-        <li>2 horas seguidas de aula</li>
-      </ul>
-      <span>R$ 49,00 / Aula</span>
-      <button>MATRICULE-SE <img src="./assets/icons/setinha.svg" alt="Setinha"></button>
-    </div>]<div class="card-mensalidade">
-      <h3>INFANTIL</h3>
-      <ul>
-        <li>Público entre 5 e 15 anos</li>
-        <li>Equipamentos fornecidos</li>
-        <li>Horários de Sex. à Sab.</li>
-        <li>2 horas seguidas de aula</li>
-      </ul>
-      <span>R$ 49,00 / Aula</span>
-      <button>MATRICULE-SE <img src="./assets/icons/setinha.svg" alt="Setinha"></button>
-    </div>
-    <div class="card-mensalidade">
-      <h3>ADULTO</h3>
-      <ul>
-        <li>Público entre 16 e 80 anos</li>
-        <li>Equipamentos fornecidos</li>
-        <li>Horários de Sex. à Sab.</li>
-        <li>3 horas seguidas de aula</li>
-      </ul>
-      <span>R$ 69,00 / Aula</span>
-      <button>MATRICULE-SE <img src="./assets/icons/setinha.svg" alt="Setinha"></button>
-    </div>
-    <div class="card-mensalidade">
-      <h3>PROFISSIONAL</h3>
-      <ul>
-        <li>Experiência de 3 anos no surf</li>
-        <li>Você deve trazer o equipamento</li>
-        <li>Horários de Sex. à Sab.</li>
-        <li>4 horas seguidas de aula</li>
-      </ul>
-      <span>R$ 99,00 / Aula</span>
-      <button>MATRICULE-SE <img src="./assets/icons/setinha.svg" alt="Setinha"></button>
+    <div class="aulas-flex">
+      <div class="card-mensalidade">
+        <div class="surfbot-icon-flex">
+          <img class="surfbot-icon" src="./assets/icons/surfbot-icon.svg" width="24" height="50">
+        </div>
+        <h3>INFANTIL</h3>
+        <div class="card-mensalidade-width">
+          <ul>
+            <li>Público entre 5 e 15 anos</li>
+            <li>Equipamentos fornecidos</li>
+            <li>Horários de Sex. à Sab.</li>
+            <li>2 horas seguidas de aula</li>
+          </ul>
+          <span>R$ 49,00 / Aula</span>
+          <button>MATRICULE-SE</button>
+        </div>
+      </div>
+      <div class="card-mensalidade">
+        <div class="surfbot-icon-flex">
+          <img class="surfbot-icon" src="./assets/icons/surfbot-icon.svg" width="24" height="50">
+          <img class="surfbot-icon" src="./assets/icons/surfbot-icon.svg" width="24" height="50">
+        </div>
+        <h3>ADULTO</h3>
+        <div class="card-mensalidade-width">
+          <ul>
+            <li>Público entre 16 e 80 anos</li>
+            <li>Equipamentos fornecidos</li>
+            <li>Horários de Sex. à Sab.</li>
+            <li>3 horas seguidas de aula</li>
+          </ul>
+          <span>R$ 69,00 / Aula</span>
+          <button>MATRICULE-SE</button>
+        </div>
+      </div>
+      <div class="card-mensalidade">
+        <div class="surfbot-icon-flex">
+          <img class="surfbot-icon" src="./assets/icons/surfbot-icon.svg" width="24" height="50">
+          <img class="surfbot-icon" src="./assets/icons/surfbot-icon.svg" width="24" height="50">
+          <img class="surfbot-icon" src="./assets/icons/surfbot-icon.svg" width="24" height="50">
+        </div>
+        <h3>PROFISSIONAL</h3>
+        <div class="card-mensalidade-width">
+          <ul>
+            <li>Experiência de 3 anos no surf</li>
+            <li>Você deve trazer o equipamento</li>
+            <li>Horários de Sex. à Sab.</li>
+            <li>4 horas seguidas de aula</li>
+          </ul>
+          <span>R$ 99,00 / Aula</span>
+          <button>MATRICULE-SE </button>
+        </div>
+      </div>
     </div>
     <p>Possui um grupo com mais de <span>3 pessoas</span>?</p>
     <p>Entre <span>em contato</span> para um desconto personalizado.</p>

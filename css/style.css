@@ -25,11 +25,6 @@ a {
   color: var(--branco);
 }
 
-/* img {
-  max-width: 100%;
-  display: block;
-} */
-
 /* Header */
 .header-principal {
   display: flex;
@@ -42,13 +37,33 @@ a {
   gap: 15px;
 }
 
-.header-menu li::before {
+.header-menu a:hover {
+  color: var(--cinza-2);
+}
+
+.header-menu li::after {
   content: "";
   display: inline-block;
-  width: 8px;
-  height: 8px;
+  width: 5px;
+  height: 5px;
   border: 2px solid var(--branco);
   border-radius: 50%;
+  margin-left: 10px;
+}
+
+.header-menu .underline-vermelho::after {
+  display: none;
+}
+
+.header-menu .underline-vermelho::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  border-radius: 0;
+  border: none;
+  margin-left: 0;
+  background-color: var(--vermelho-2);
 }
 
 /* Escola de Surf */
@@ -112,8 +127,10 @@ a {
 
 /* Seção Main */
 .main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex: 1;
   margin-top: 3rem;
 }
 
@@ -121,15 +138,23 @@ a {
   position: relative;
 }
 
+.pranchas-container::after {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 100%;
+  background: var(--cinza-2);
+}
+
 .galeria-e-mapa .foto-maps {
   position: absolute;
   bottom: -100px;
-  left: 26px;
+  left: 37px;
 }
 
 .galeria-e-mapa .galeria-info {
   margin-top: 8rem;
-  margin-left: 26px;
+  margin-left: 37px;
 }
 
 .galeria-e-mapa .galeria-info h4 {
@@ -167,7 +192,7 @@ a {
 
 .galeria-e-mapa .galeria-info .transportes .transportes-info {
   color: var(--cinza-3);
-  font-size: 14px;
+  font-size: 15px;
 }
 
 /* Main Info */
@@ -212,4 +237,123 @@ a {
 
 .main-texto p {
   margin: 1.5rem 0;
+}
+
+/* Aulas */
+.aulas {
+  margin-top: 7rem;
+  background: var(--cinza-1);
+}
+
+.aulas h1 {
+  padding-top: 7rem;
+  padding-bottom: 4rem;
+  font-family: "Alice";
+  font-weight: 400;
+  font-size: 72px;
+  text-align: center;
+  color: var(--preto-2);
+}
+
+.aulas-flex {
+  display: flex;
+  gap: 30px;
+}
+
+.aulas-flex .card-mensalidade {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 33%;
+  background: var(--branco);
+  box-shadow: 0px 5px 5px rgba(187, 204, 221, 0.4),
+    0px 10px 10px rgba(187, 204, 221, 0.4);
+  border-radius: 5px;
+}
+
+.surfbot-icon-flex {
+  display: flex;
+  justify-content: center;
+  margin-top: -25px;
+  margin-right: 30px;
+}
+
+.card-mensalidade h3 {
+  padding-right: 30px;
+  padding-top: 35px;
+  font-size: 24px;
+  color: var(--preto-2);
+  text-align: center;
+}
+
+.card-mensalidade ul::before {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 65%;
+  background: var(--cinza-1);
+  margin-bottom: 30px;
+}
+
+.card-mensalidade ul li {
+  color: var(--preto-2);
+}
+
+.card-mensalidade ul li + li {
+  margin-top: 15px;
+}
+
+.card-mensalidade ul li::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border: 2px solid var(--vermelho-2);
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.card-mensalidade-width {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-left: 120px;
+  padding-top: 60px;
+}
+
+.card-mensalidade-width span {
+  color: var(--azul-2);
+  font-weight: bold;
+}
+
+.card-mensalidade-width span::before {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 65%;
+  background: var(--cinza-1);
+  margin-bottom: 30px;
+}
+
+.card-mensalidade-width button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--preto-2);
+  color: var(--branco);
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  padding: 10px 20px 10px 20px;
+  margin-bottom: 40px;
+  cursor: pointer;
+  width: 65%;
+}
+
+.card-mensalidade-width button::after {
+  content: url("../assets/icons/setinha.svg");
+}
+
+.card-mensalidade-width button:hover {
+  background: var(--preto-1);
 }
