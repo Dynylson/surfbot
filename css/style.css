@@ -1,5 +1,5 @@
 @import "./cores.css";
-
+/* Estilos Gerais */
 * {
   padding: 0;
   margin: 0;
@@ -8,6 +8,208 @@
 }
 
 .container {
-  padding: 10px 3rem;
+  padding: 12px 3rem;
   margin: 0 auto;
+}
+
+.pad {
+  padding: 12px 3rem;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--branco);
+}
+
+/* img {
+  max-width: 100%;
+  display: block;
+} */
+
+/* Header */
+.header-principal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-menu {
+  display: flex;
+  gap: 15px;
+}
+
+.header-menu li::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border: 2px solid var(--branco);
+  border-radius: 50%;
+}
+
+/* Escola de Surf */
+.surf-bg {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  background-image: url("../assets/surfista3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+  height: 400px;
+}
+
+.surf-bg h1 {
+  font-size: 72px;
+  font-family: "Alice", sans-serif;
+  color: var(--branco);
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.surf-bg > div {
+  display: flex;
+  margin-bottom: 1.2rem;
+}
+
+.surf-bg > div input {
+  border-radius: 5px 0 0 5px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0.5rem 10px;
+  padding-right: 5rem;
+  border: 2px solid transparent;
+  outline: none;
+}
+
+.surf-bg > div input:focus {
+  border-color: var(--cinza-2);
+}
+
+.surf-bg > div input::placeholder {
+  color: var(--cinza-2);
+}
+
+.surf-bg > div button {
+  border-radius: 0 5px 5px 0;
+  background: var(--vermelho-2);
+  color: var(--branco);
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  padding: 15px 10px;
+  cursor: pointer;
+}
+
+.surf-bg > div button:hover {
+  background: var(--vermelho-3);
+}
+
+/* Seção Main */
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 3rem;
+}
+
+.pranchas-container {
+  position: relative;
+}
+
+.galeria-e-mapa .foto-maps {
+  position: absolute;
+  bottom: -100px;
+  left: 26px;
+}
+
+.galeria-e-mapa .galeria-info {
+  margin-top: 8rem;
+  margin-left: 26px;
+}
+
+.galeria-e-mapa .galeria-info h4 {
+  display: flex;
+  align-items: center;
+}
+
+.galeria-e-mapa .galeria-info h4::before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border: 2px solid var(--vermelho-1);
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.galeria-e-mapa .galeria-info .transportes li {
+  display: flex;
+  align-items: center;
+}
+
+.galeria-e-mapa .galeria-info .transportes li::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 2px;
+  background: var(--azul-2);
+  margin-right: 6px;
+}
+
+.galeria-e-mapa .galeria-info .transportes p {
+  font-weight: bold;
+}
+
+.galeria-e-mapa .galeria-info .transportes .transportes-info {
+  color: var(--cinza-3);
+  font-size: 14px;
+}
+
+/* Main Info */
+.main-info-container h1,
+.main-info-container span {
+  font-family: "Alice", sans-serif;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 74px;
+  margin-bottom: 105px;
+}
+
+.main-info-container span {
+  color: var(--azul-2);
+}
+
+.main-info .main-info-item {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  max-width: 500px;
+  border-top: 2px solid var(--cinza-1);
+}
+
+.main-info .main-info-item img {
+  margin: 30px 0;
+}
+
+.main-info .main-info-item h3 {
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--preto-2);
+}
+
+.main-texto {
+  font-size: 18px;
+  line-height: 29px;
+  color: var(--preto-2);
+  border-top: 2px solid var(--cinza-1);
+  max-width: 500px;
+}
+
+.main-texto p {
+  margin: 1.5rem 0;
 }

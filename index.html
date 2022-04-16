@@ -18,9 +18,9 @@
     <div class="header-info azul-2-background">
       <p class="container branco">Aulas na Praia Mansa de Sexta à Domingo das 06:00 às 14:00</p>
     </div>
-    <div class="header-principal preto-3-background">
+    <div class="header-principal preto-3-background container">
       <img src="./assets/surfbot-logo.svg" alt="Logo da Surfbot">
-      <ul>
+      <ul class="header-menu">
         <li><a href="#">Praia</a></li>
         <li><a href="#">Aulas</a></li>
         <li><a href="#">Contato</a></li>
@@ -29,49 +29,61 @@
     </div>
   </header>
 
-  <section>
-    <h1>Escola de Surf</h1>
-    <div>
+  <section class="surf-bg">
+    <h1 class="pad">Escola de Surf</h1>
+    <div class="pad">
       <input type="email" placeholder="Email">
       <button>MATRICULE-SE <img src="./assets/icons/setinha.svg" alt="Setinha"></button>
     </div>
   </section>
 
-  <main>
+  <main class="container main">
     <div class="galeria-e-mapa">
-      <img src="./assets/foto-galeria.jpg" alt="Pranchas">
-      <img src="./assets/googlemaps.jpg" alt="Google Maps">
-      <h4>COMO CHEGAR</h4>
-      <ul>
-        <li>Carro <span>pela via Lúcio Costa sentido Barra</span></li>
-        <li>Ônibus <span>linhas 2333, 138, 189 e 170</span></li>
-        <li>Metrô <span>linha azul sentido Zona Sul</span></li>
-      </ul>
+      <div class="pranchas-container">
+        <img class="foto-galeria" src="./assets/foto-galeria.jpg" alt="Pranchas">
+        <img class="foto-maps" src="./assets/googlemaps.jpg" alt="Google Maps">
+      </div>
+      <div class="galeria-info">
+        <h4>COMO CHEGAR</h4>
+        <ul class="transportes">
+          <li>
+            <p>Carro <span class="transportes-info">pela via Lúcio Costa sentido Barra</span></p>
+          </li>
+          <li>
+            <p>Ônibus <span class="transportes-info">linhas 2333, 138, 189 e 170</span></p>
+          </li>
+          <li>
+            <p>Metrô <span class="transportes-info">linha azul sentido Zona Sul</span></p>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="main-info">
-      <h2><span>Aulas</span> em uma das melhores praias do <span>Rio</span>.</h2>
-      <ul>
+    <div class="main-info-container">
+      <h1><span>Aulas</span> em uma <br> das melhores <br> praias do <span>Rio</span>.</h1>
+      <ul class="main-info">
         <li>
-          <div>
+          <div class="main-info-item">
             <img src="./assets/icons/sandalhas.svg" alt="Sandálias">
             <h3>8 km de costa</h3>
           </div>
         </li>
         <li>
-          <div>
+          <div class="main-info-item">
             <img src="./assets/icons/coco.svg" alt="Coco">
             <h3>Restaurantes à beira mar</h3>
           </div>
         </li>
         <li>
-          <div>
+          <div class="main-info-item">
             <img src="./assets/icons/boia.svg" alt="Boia">
             <h3>Salva-vidas a cada 300 m</h3>
           </div>
         </li>
       </ul>
-      <p>Como cidade capital, abriga na zona chamada Plateau, promontório à beira-mar, edifícios públicos e outras construções de importância, como o Palácio Presidencial, construído no fim do século XIX para ser a residência do governador português.</p>
-      <p>Como cidade capital, abriga na zona chamada Plateau, promontório à beira-mar, edifícios públicos e outras construções de importância, como o Palácio Presidencial, construído no fim do século XIX para ser a residência do governador português.</p>
+      <div class="main-texto">
+        <p>Como cidade capital, abriga na zona chamada Plateau, promontório à beira-mar, edifícios públicos e outras construções de importância, como o Palácio Presidencial, construído no fim do século XIX para ser a residência do governador português.</p>
+        <p>Como cidade capital, abriga na zona chamada Plateau, promontório à beira-mar, edifícios públicos e outras construções de importância, como o Palácio Presidencial, construído no fim do século XIX para ser a residência do governador português.</p>
+      </div>
     </div>
   </main>
 
