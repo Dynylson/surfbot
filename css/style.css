@@ -142,6 +142,8 @@ a {
 
 .pranchas-container {
   position: relative;
+  border-right: 2px solid var(--cinza-1);
+  padding-right: 13rem;
 }
 
 .pranchas-container::after {
@@ -536,4 +538,20 @@ a {
 
 .contato-info-flex a svg {
   margin-left: 3px;
+}
+
+/* Footer */
+.footer {
+  background: var(--azul-2);
+  padding: 30px 0;
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-flex p {
+  color: var(--branco);
 }
