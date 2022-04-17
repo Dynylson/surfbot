@@ -16,6 +16,16 @@
   padding: 12px 3rem;
 }
 
+.pad-top {
+  padding-top: 15px;
+}
+
+.pad-bottom {
+  padding-bottom: 15px;
+  padding-top: 10px;
+  display: inline-block;
+}
+
 li {
   list-style: none;
 }
@@ -398,4 +408,132 @@ a {
 /* Blockquote */
 .blockquote-image {
   max-width: 100%;
+}
+
+/* Contato */
+.contato {
+  position: relative;
+}
+
+.contato > img {
+  position: absolute;
+  right: 180px;
+  bottom: 230px;
+}
+
+.contato .formulario,
+.contato .contato-info-flex {
+  margin-top: 3rem;
+}
+
+.contato-flex {
+  display: flex;
+  align-items: start;
+}
+
+.contato h1 {
+  font-family: "Alice", sans-serif;
+  font-weight: 400;
+  font-size: 72px;
+  color: var(--preto-2);
+  text-align: center;
+  margin-top: 60px;
+}
+
+.formulario {
+  flex: 1 0 21%;
+  padding-right: 8rem;
+  border-right: 2px solid var(--cinza-1);
+}
+
+.formulario label {
+  display: block;
+  color: var(--preto-2);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.formulario input {
+  padding: 15px 10px;
+}
+
+.formulario textarea {
+  padding: 15px;
+  height: 230px;
+}
+
+.formulario input,
+.formulario textarea {
+  margin: 5px 0 10px 0;
+  width: 100%;
+  background: var(--cinza-1);
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  resize: none;
+  border: 2px solid transparent;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+  border-color: var(--cinza-2);
+}
+
+.formulario button {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  background: var(--preto-2);
+  color: var(--branco);
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  padding: 10px 20px 10px 20px;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+
+.formulario button:hover {
+  background: var(--preto-1);
+}
+
+.contato-info-flex {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 20%;
+  padding-left: 8rem;
+}
+
+.contato-info-flex h3 {
+  color: var(--preto-2);
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.contato-info-flex ul {
+  color: var(--preto-2);
+}
+
+.contato-info-flex .border-top {
+  padding-top: 15px;
+  border-top: 2px solid var(--cinza-1);
+  max-width: 300px;
+}
+
+.contato-info-flex .border-bottom {
+  padding-bottom: 15px;
+  border-bottom: 2px solid var(--cinza-1);
+  max-width: 300px;
+}
+
+.contato-info-flex a {
+  color: var(--preto-2);
+  font-weight: bold;
+}
+
+.contato-info-flex a svg {
+  margin-left: 3px;
 }
