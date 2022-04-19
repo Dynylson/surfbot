@@ -155,6 +155,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: end;
+  flex-wrap: wrap;
   background-image: url("../assets/surfista3.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -173,7 +174,7 @@ a {
 
 .surf-bg > div {
   display: flex;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.5rem;
 }
 
 .surf-bg > div input {
